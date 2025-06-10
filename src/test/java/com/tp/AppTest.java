@@ -11,7 +11,7 @@ public class AppTest
     @Test
     public void testAddition() 
     {
-        int result = App.addition(2, 3);
-        assertTrue(result == 5);
+        int result = App.addition(4, 3);
+        assertTrue(result == 7);
     }
 }
