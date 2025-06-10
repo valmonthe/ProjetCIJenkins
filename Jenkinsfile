@@ -37,10 +37,10 @@ pipeline {
 
     post {
         success {
-            echo '✅ Build terminé avec succès.'
+            echo 'Build terminé avec succès.'
         }
         failure {
-            echo '❌ Le build a échoué.'
+            echo 'Le build a échoué.'
         }
     }
 }
