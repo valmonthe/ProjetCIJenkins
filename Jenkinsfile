@@ -16,21 +16,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Compilation du projet'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Tests') {
             steps {
                 echo 'Lancement des tests'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
         stage('Package') {
             steps {
                 echo 'Packaging'
-                sh 'mvn package'
+                bat 'mvn package'
             }
         }
     }
